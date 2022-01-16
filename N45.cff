@@ -1,0 +1,13 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Child-Home-Interaction
+message: 'If you use this code, please cite it as below.'
+type: software
+authors:
+  - given-names: Zahra
+    family-names: Kakavand
+    email: zkaka044@uottawa.ca
+    affiliation: University of Ottawa
+    orcid: 'https://orcid.org/0000-0001-6885-9688'
