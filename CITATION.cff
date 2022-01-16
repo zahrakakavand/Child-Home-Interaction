@@ -1,0 +1,10 @@
+cff-version: 1.0
+message: "If you use this code, please cite it as below."
+authors:
+  - family-names: Kakavand
+    given-names: Zahra
+    orcid: https://orcid.org/0000-0001-6885-9688
+title: "Child-Home-Interaction"
+version: 1.0.0
+doi: 10.5281/zenodo.5856572
+date-released: 2022-01-14
