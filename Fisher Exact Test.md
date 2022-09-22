@@ -1,4 +1,4 @@
-## Fisher Exact Test
+# Fisher Exact Test
 Fisher’s Exact Test is a statistical test that is used to analyze contingency tables.
 This non-parametric test is utilized to show dependency of parameters on a small sample.
 In this project, we used Fisher's Exact test to investigates the dependency of level of abstraction and gamification to task completion rate.
@@ -70,7 +70,7 @@ In this research, Two experiment was conducted:
 
 For each of the above two experiments we have to use 2 Fisher's exact test.
 
-#### Experiment 1
+## Experiment 1
 For investigating the association between level of abstraction and task completion rate we do the Fisher's exact test between group 1 and group 2 which have the same gamification approach but different level of abstractions. Then, do another Fisher's exact test between group 3 and group 4 as well. The results are available in the following table:
 |   |**G1 (3D)**|**G2 (Verbal)**| **Total**|
 | ------------- | ------------- |------------- |------------- |
@@ -122,4 +122,4 @@ p-value = 0.7824
 alternative hypothesis: less
 ```
 
-#### Experiment 1
+## Experiment 2
