@@ -8,6 +8,25 @@ For this purpose, we categorized different task completion rates into 4 categori
 | ------------- | ------------- | ------------- | ------------- |------------- |
 |**Number of Failed Tasks**| 0 or 1 or 2 |3 or 4 or 5|6 or 7 or 8| more than 8|
 
+To calculate the count of users in each rate category we used the following piece of python code:
+
+'''
+# 0-1-2, 3-4-5, 6-7-8, more
+Rcategory = []
+print(Rate)
+for i in range(len(Rate)):
+    rcat = 16 - Rate[i]
+    if rcat == 0 or rcat == 1 or rcat == 2:
+        Rcategory.append(0)
+    elif rcat == 3 or rcat == 4 or rcat == 5:
+        Rcategory.append(1)
+    elif rcat == 6 or rcat == 6 or rcat == 6:
+        Rcategory.append(2)
+    else:
+        Rcategory.append(3)
+print(Rcategory)
+'''
+
 And specified the groups of users as follows:
 
 |     |**Level of Abstraction: 3D**|**Level of Abstraction: text**|
@@ -20,10 +39,20 @@ In this research, Two experiment was conducted:
 2) to determine if there was a significant association between Gamification and Task Completion rate.
 
 For each of the above two experiments we have to use 2 Fisher's exact test. For investigating the association between level of abstraction and task completion rate we do the Fisher's exact test between group 1 and group 2 which have the same gamification approach but different level of abstractions. Then, do another Fisher's exact test between group 3 and group 4 as well. The results are available in the following table
-|   |**G1 (3D) **|**G2 (Verbal)**| **Total**|
+|   |**G1 (3D)**|**G2 (Verbal)**| **Total**|
 | ------------- | ------------- |------------- |------------- |
 | Rate 1 | 6 |3|9|
 | Rate 2 | 2 |5|7|
 | Rate 3 | 0 |0|0|
 | Rate 4 | 0 |0|0|
 | Total  | 8 |8|8|
+
+
+|   |**G3 (3D)**|**G4 (Verbal)**| **Total**|
+| ------------- | ------------- |------------- |------------- |
+| Rate 1 | 1 |1|2|
+| Rate 2 | 3 |2|5|
+| Rate 3 | 1 |0|1|
+| Rate 4 | 3 |5|8|
+| Total  | 8 |8|16|
+
