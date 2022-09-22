@@ -68,7 +68,10 @@ In this research, Two experiment was conducted:
 1) to determine if there was a significant association between Level of Abstraction and Task Completion rate.
 2) to determine if there was a significant association between Gamification and Task Completion rate.
 
-For each of the above two experiments we have to use 2 Fisher's exact test. For investigating the association between level of abstraction and task completion rate we do the Fisher's exact test between group 1 and group 2 which have the same gamification approach but different level of abstractions. Then, do another Fisher's exact test between group 3 and group 4 as well. The results are available in the following table:
+For each of the above two experiments we have to use 2 Fisher's exact test.
+
+#### Experiment 1
+For investigating the association between level of abstraction and task completion rate we do the Fisher's exact test between group 1 and group 2 which have the same gamification approach but different level of abstractions. Then, do another Fisher's exact test between group 3 and group 4 as well. The results are available in the following table:
 |   |**G1 (3D)**|**G2 (Verbal)**| **Total**|
 | ------------- | ------------- |------------- |------------- |
 | Rate 1 | 6 |3|9|
@@ -83,7 +86,7 @@ using the following R code we can calculate the p-value of Fisher's exact test f
 fisher.test(rbind(c(6, 2, 0, 0), c(3, 5, 0, 0)), alternative="less")
 ```
 
-The result of running this line of could shows that there was not a statistically significant association between Level of Abstraction and Task Completion Rate:  
+The result of running this line of could shows that there was not a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed p = .3147):  
 
 ```
 	Fisher's Exact Test for Count Data
@@ -93,6 +96,8 @@ p-value = 0.3147
 alternative hypothesis: less
 ```
 
+By repeating the same approach for G3 and G4 we can create the following table:
+
 |   |**G3 (3D)**|**G4 (Verbal)**| **Total**|
 | ------------- | ------------- |------------- |------------- |
 | Rate 1 | 1 |1|2|
@@ -101,4 +106,20 @@ alternative hypothesis: less
 | Rate 4 | 3 |5|8|
 | Total  | 8 |8|16|
 
+using the following R code we can calculate the p-value of Fisher's exact test for the mentioned data:
 
+```
+fisher.test(rbind(c(1, 3, 1, 3), c(1, 2, 0, 5)), alternative="less")
+```
+
+The result of running this line of could shows that there was not a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed p = .7824):  
+
+```
+	Fisher's Exact Test for Count Data
+
+data:  rbind(c(1, 3, 1, 3), c(1, 2, 0, 5))
+p-value = 0.7824
+alternative hypothesis: less
+```
+
+#### Experiment 1
