@@ -3,6 +3,7 @@ This non-parametric test is suitable to show dependency of parameters on a small
 In this project we used Fisher's Exact test to investigates the dependency of level of abstraction and gamification to task completion rate.
 For this purpise we categorized different task completion rates into 4 categories:
 
-|Rate 1|Rate 2|
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
+
+  |Rate 1|Rate 2|Rate 3|Rate 4|
+  | ------------- | ------------- | ------------- | ------------- |
+  | Content Cell  | Content Cell  |Content Cell  | Content Cell  |
