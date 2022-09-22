@@ -6,6 +6,6 @@ In this project we used Fisher's Exact test to investigates the dependency of le
 For this purpise we categorized different task completion rates into 4 categories:
 
 
-  |Rate 1|Rate 2|Rate 3|Rate 4|
-  | ------------- | ------------- | ------------- | ------------- |
-  | Content Cell  | Content Cell  |Content Cell  | Content Cell  |
+|**Rate Categories**|Rate 1|Rate 2|Rate 3|Rate 4|
+| ------------- | ------------- | ------------- | ------------- |
+|**Number of Failed Tasks**| 0 or 1 or 2 |3 or 4 or 5|6 or 7 or 8| more than 8
