@@ -1,9 +1,7 @@
 # Fisher's Exact Test
-Fisher’s exact test is used to determine whether or not there is a significant association between two categorical variables. It is typically used as an alternative to the Chi-Square Test of Independence when one or more of the cell counts in a 2×2 table is less than 5. 
+A statistical procedure to determine whether two categorical variables are related. Appropriate for small samples, it examines the associations between the rows and columns of data in a fourfold (2 × 2) contingency table. It is typically used as an alternative to the Chi-Square Test of Independence when one or more of the cell counts in a 2×2 table is less than 5. 
 
-In this project, we used Fisher's Exact test to determine whether or not there is a significant association between level of abstraction and gamification to task completion rate.
-For this purpose, we categorized different task completion rates into 4 categories (following table):
-
+In this project, we used Fisher's Exact test to determine whether or not there is a significant association between level of abstraction and gamification to task completion rate. For this purpose, we categorized different task completion rates into 4 categories (following table):
 
 |**Rate Categories**|Rate 1|Rate 2|Rate 3|Rate 4|
 | ------------- | ------------- | ------------- | ------------- |------------- |
