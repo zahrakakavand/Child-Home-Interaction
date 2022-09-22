@@ -8,12 +8,11 @@ For this purpose, we categorized different task completion rates into 4 categori
 | ------------- | ------------- | ------------- | ------------- |------------- |
 |**Number of Failed Tasks**| 0 or 1 or 2 |3 or 4 or 5|6 or 7 or 8| more than 8|
 
-To calculate the count of users in each rate category we used the following piece of python code:
+First, we need to load the rate data and change their values to the categorical values using the following python code:
 
 ```
 # 0-1-2, 3-4-5, 6-7-8, more
 Rcategory = []
-print(Rate)
 for i in range(len(Rate)):
     rcat = 16 - Rate[i]
     if rcat == 0 or rcat == 1 or rcat == 2:
@@ -24,10 +23,40 @@ for i in range(len(Rate)):
         Rcategory.append(2)
     else:
         Rcategory.append(3)
-print(Rcategory)
 ```
 
-And specified the groups of users as follows:
+To calculate the count of users in each rate category we used the following piece of python code:
+
+```
+G1Rcat = [0,0,0,0]
+for i in range(8):
+    G1Rcat[Rcategory[i]] += 1
+print('G1Rcat', G1Rcat)
+
+G2Rcat = [0,0,0,0]
+for i in range(8):
+    G2Rcat[Rcategory[i+8]] += 1
+print('G2Rcat', G2Rcat)
+
+G3Rcat = [0,0,0,0]
+for i in range(8):
+    G3Rcat[Rcategory[i+16]] += 1
+print('G3Rcat', G3Rcat)
+
+G4Rcat = [0,0,0,0]
+for i in range(8):
+    G4Rcat[Rcategory[i+24]] += 1
+print('G4Rcat', G4Rcat)
+```
+The result of the above code is as follows:
+```
+G1Rcat [6, 2, 0, 0]
+G2Rcat [3, 5, 0, 0]
+G3Rcat [1, 3, 1, 3]
+G4Rcat [1, 2, 0, 5]
+```
+
+As mentioned in the paper, the specified groups of users are as follows:
 
 |     |**Level of Abstraction: 3D**|**Level of Abstraction: text**|
 | ------------- | ------------- | ------------- |
