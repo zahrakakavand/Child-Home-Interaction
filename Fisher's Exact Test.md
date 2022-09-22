@@ -86,7 +86,7 @@ using the following R code we can calculate the p-value of Fisher's exact test f
 fisher.test(rbind(c(6, 2, 0, 0), c(3, 5, 0, 0)), alternative="less")
 ```
 
-The result of running this line of could shows that there **was not** a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed p = .3147):  
+The result of running this line of could shows that there **was not** a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed **p = .3147**):  
 
 ```
 	Fisher's Exact Test for Count Data
@@ -112,7 +112,7 @@ using the following R code we can calculate the p-value of Fisher's exact test f
 fisher.test(rbind(c(1, 3, 1, 3), c(1, 2, 0, 5)), alternative="less")
 ```
 
-The result of running this line of could shows that there **was not** a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed p = .7824):  
+The result of running this line of could shows that there **was not** a statistically significant association between Level of Abstraction and Task Completion Rate (two-tailed **p = .7824**):  
 
 ```
 	Fisher's Exact Test for Count Data
@@ -138,7 +138,7 @@ using the following R code we can calculate the p-value of Fisher's exact test f
 fisher.test(rbind(c(6, 2, 0, 0), c(1, 3, 1, 3)), alternative="less")
 ```
 
-The result of running this line of could shows that there **was** a statistically significant association between Gamification and Task Completion Rate (two-tailed p = .04274):  
+The result of running this line of could shows that there **was** a statistically significant association between Gamification and Task Completion Rate (two-tailed **p = .04274**):  
 
 ```
 	Fisher's Exact Test for Count Data
@@ -164,7 +164,7 @@ using the following R code we can calculate the p-value of Fisher's exact test f
 fisher.test(rbind(c(3, 5, 0, 0), c(1, 2, 0, 5)), alternative="less")
 ```
 
-The result of running this line of could shows that there **was** a statistically significant association between Gamification and Task Completion Rate (two-tailed p = .0373):  
+The result of running this line of could shows that there **was** a statistically significant association between Gamification and Task Completion Rate (two-tailed **p = .0373**):  
 
 ```
 	Fisher's Exact Test for Count Data
