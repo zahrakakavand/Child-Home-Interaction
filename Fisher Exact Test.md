@@ -10,7 +10,7 @@ For this purpose, we categorized different task completion rates into 4 categori
 
 And specified the groups of users as follows:
 
-||**Level of Abstraction: 3D**|**Level of Abstraction: text**|
+|**Level of Abstraction: 3D**|**Level of Abstraction: text**|
 | ------------- | ------------- | ------------- | ------------- |------------- |
 |**Game-based**| G1: 3D game-based design |G2: Verbal game-based design|
 | ------------- | ------------- | ------------- | ------------- |------------- |
