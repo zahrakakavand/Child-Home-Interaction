@@ -1,6 +1,6 @@
 # Fisher's Exact Test
-Fisher’s Exact Test is a statistical test that is used to analyze contingency tables.
-This non-parametric test is utilized to show dependency of parameters on a small sample.
+Fisher’s exact test is used to determine whether or not there is a significant association between two categorical variables. It is typically used as an alternative to the Chi-Square Test of Independence when one or more of the cell counts in a 2×2 table is less than 5. 
+
 In this project, we used Fisher's Exact test to investigates the dependency of level of abstraction and gamification to task completion rate.
 For this purpose, we categorized different task completion rates into 4 categories (following table):
 
