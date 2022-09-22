@@ -76,6 +76,7 @@ For each of the above two experiments we have to use 2 Fisher's exact test. For 
 | Rate 3 | 0 |0|0|
 | Rate 4 | 0 |0|0|
 | Total  | 8 |8|8|
+
 using the following R code we can calculate the p-value of Fisher's exact test for the mentioned data:
 
 ```
