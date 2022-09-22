@@ -10,7 +10,7 @@ For this purpose, we categorized different task completion rates into 4 categori
 
 To calculate the count of users in each rate category we used the following piece of python code:
 
-'''
+```
 # 0-1-2, 3-4-5, 6-7-8, more
 Rcategory = []
 print(Rate)
@@ -25,7 +25,7 @@ for i in range(len(Rate)):
     else:
         Rcategory.append(3)
 print(Rcategory)
-'''
+```
 
 And specified the groups of users as follows:
 
